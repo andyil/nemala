@@ -1,0 +1,14 @@
+{% extends "poorslaves/base.html" %}
+{% load i18n %}
+{% load static %}
+
+{% block content %}
+
+<form method="post" action="submit_swallow" dir="ltr">
+    <textarea name="swallow" rows="10" cols="40">
+    </textarea>
+{% csrf_token %}
+    <button type="submit">{% trans "Swallow" %}</button>
+</form>
+
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "poorslaves/base.html" %}
+{% load static %}
+{% load i18n %}
+
+
+
+
+{% block content %}
+
+<h2>{% trans "total_documents2" %}: {{documents_count}}</h2>
+<h2>{% trans "total_documents_solved" %}: {{solved}}</h2>
+<h2>{% trans "total_documents_to_solve" %}: {{to_solve}}</h2>
+<h2>{% trans "last_7_days" %}: {{last_week}}</h2>
+<h3>{% trans "total_today" %}: {{today}},
+    {% trans "total_yesterday" %}: {{yesterday}},
+    {% trans "total_day_before" %}: {{day_before}}</h3>
+<h2>{% trans "remaining_weeks" %}: {{remaining_weeks}}</h2>
+<h2>{% trans "repeated_answers" %}: {{repeated}}</h2>
+
+<h3><a href="show_answers">{% trans "see_answers" %}</a></h3>
+{% endblock %}

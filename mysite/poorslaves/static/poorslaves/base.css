@@ -1,0 +1,21 @@
+
+
+#document {
+right 0px;
+position: absolute;
+}
+
+#form
+{
+left: 0px;
+position: absolute;
+}
+
+.container {
+    position: relative;
+
+}
+
+.hint {
+    background: lightgray;
+}

@@ -1,0 +1,29 @@
+{% load i18n %}
+{% load static %}
+
+<html lang="he">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    <link href="{% static 'poorslaves/base.css' %}" rel="stylesheet"/>
+    {% block head %}
+    {% endblock %}
+</head>
+<body dir="rtl">
+<div class="container">
+    <div class="row">
+    {% trans "Hello"%}, {{user}} <a href="/logout">{% trans "Logout"%}</a><br/>
+    </div>
+
+        {% block content %}
+        {% endblock %}
+
+</div>
+
+</body>
+</html>

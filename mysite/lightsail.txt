@@ -1,0 +1,5 @@
+sudo apt-get update && sudo apt-get -y upgrade
+sudo apt-get install -y python3-pip
+sudo python3 -m pip install django
+wget https://s3-us-west-2.amazonaws.com/runner-bundles/consensus.tar.gz
+tar xvfz consensus.tar.gz

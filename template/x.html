@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="style.css" rel="stylesheet"/>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    <script src="javascript.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+</head>
+<body>
+
+<table border="1">
+    <tbody>
+    <tr id="templaterow" class="answer-row">
+        <td>
+            <h4 class="courtbased">The Court</h4>
+    <label class="judgebased" for="judge">Judge</label>
+    <select id="judge" name="judge" class="judgebased js-example-basic-simple">
+        <option>Aharon Barak אהרון ברק</option>
+        <option>Dorit Benisch דורית בייניש</option>
+        <option>Miriam Naor מרים נאור</option>
+        <option>Ester Hayut אסתר חיות</option>
+        <option>Hanan Melcer חנן מלצר</option>
+    </select>
+    <br/>
+    <label for="disposition">Disposition Type</label>
+    <select id="disposition" name="disposition" class="js-example-basic-simple">
+        <option>On the merits</option>
+        <option>Voluntary Withdrawal</option>
+        <option>In-court settlement</option>
+        <option>Out-of-court settlement</option>
+        <option>Erased</option>
+        <option>Dismissed</option>
+        <option>Other</option>
+    </select>
+    <br/>
+    <label for="outcome">Outcome</label>
+    <select id="outcome" name="outcome" class="js-example-basic-simple">
+        <option>Rejected</option>
+        <option>Accepted</option>
+        <option>Partially Accepted</option>
+        <option>Remand</option>
+        <option>Accepted and Remanded</option>
+        <option>Dismissed</option>
+        <option>Unusual</option>
+        <option>No disposition</option>
+    </select>
+    <br/>
+    <label for="winner">Winner</label>
+    <select id="winner" name="winner" class="js-example-basic-simple">
+        <option>Petitioner</option>
+        <option>Respondent</option>
+        <option>Both</option>
+        <option>Unknown</option>
+    </select><br/>
+        <label for="issue">Issue</label><br/>
+        <select id="issue" name="issue" class="js-example-basic-simple" multiple>
+           <optgroup label="Criminal Law">
+                <option>Criminal - Traffic</option>
+                <option>Criminal - White collar</option>
+                <option>Criminal - Security</option>
+                <option>Criminal - Violence</option>
+                <option>Criminal - Sex</option>
+                <option>Criminal - Corruption</option>
+                <option>Criminal - Prisioner's petitions</option>
+                <option>Criminal - Arrests</option>
+                <option>Criminal - Procedure & Evidence</option>
+                <option>Criminal - Other</option>
+           </optgroup>
+            <optgroup label="Civil law">
+                 <option>Civil - Contracts</option>
+                <option>Civil - Torts</option>
+                <option>Civil - Land</option>
+                <option>Civil - Fiscal/Tax</option>
+                <option>Civil - Corporate/Commercial</option>
+                <option>Civil - Equity and Trusts</option>
+                <option>Civil - Property</option>
+                <option>Civil - Intellectual Property</option>
+                <option>Civil - Bankruptcy</option>
+                <option>Civil - Procedure and Evidence</option>
+                <option>Civil - other</option>
+            </optgroup>
+            <optgroup label="Family law">
+                <option>Family - Wills and successions</option>
+                <option>Family - Custody and guardiandship</option>
+                <option>Family - Alimony and assets</option>
+                <option>Family - other</option>
+            </optgroup>
+            <optgroup label="Religious law">
+                <option>Religious - Rabbinical courts</option>
+                <option>Religious - Other religions</option>
+                <option>Religious - other</option>
+            </optgroup>
+            <optgroup label="Social security, Health Insurance, Pension">
+                <option>Social security, Health Insurance, Pension</option>
+            </optgroup>
+            <optgroup label="Labor and Employment">
+                <option>Labor and Employment</option>
+            </optgroup>
+            <optgroup label="International law">
+                <option>International law</option>
+            </optgroup>
+            <optgroup label="National security and the territories">
+                <option>National security and the territories</option>
+            </optgroup>
+            <optgroup label="Administrative law and regulation">
+                <option>Administrative - Tender מכרזים</option>
+                <option>Administrative - Licenses, planning and construction</option>
+                <option>Administrative - Media</option>
+                <option>Administrative - Commercial and Economic Regulation</option>
+                <option>Administrative - Municipalities</option>
+                <option>Administrative - Environmental</option>
+                <option>Administrative - Education</option>
+                <option>Administrative - other</option>
+            </optgroup>
+            <optgroup label="Constitutional Law">
+                <option>Constitutional - Election law</option>
+                <option>Constitutional - Religion and State</option>
+                <option>Constitutional - Separation of powers and judicial power</option>
+                <optgroup label="Human rights">
+                    <option>Constitutional - Human Rights - Dignity</option>
+                    <option>Constitutional - Human Rights - Minimal conditions for existence in Dignity</option>
+                    <option>Constitutional - Human Rights - Right to health</option>
+                    <option>Constitutional - Human Rights - Right to life</option>
+                    <option>Constitutional - Human Rights - Equality/ Discrimination</option>
+                    <option>Constitutional - Human Rights - Property</option>
+                    <option>Constitutional - Human Rights - Access to courts</option>
+                    <option>Constitutional - Human Rights - Due process</option>
+                    <option>Constitutional - Human Rights - Freedom of association</option>
+                    <option>Constitutional - Human Rights - Freedom of movement</option>
+                    <option>Constitutional - Human Rights - Freedom of occupation</option>
+                    <option>Constitutional - Human Rights - Freedom of speech</option>
+                    <option>Constitutional - Human Rights - Liberty</option>
+                    <option>Autonomy</option>
+                    <option>Constitutional - Human Rights - Right to family life</option>
+                    <option>Constitutional - Human Rights - Education</option>
+                    <option>Constitutional - Human Rights - Freedom of/from religion</option>
+                    <option>Constitutional - Human Rights - Privacy</option>
+                    <option>Constitutional - Human Rights - Interest</option>
+                    <option>Constitutional - Human Rights - The right to elect and to be elected</option>
+                    <option>Constitutional - Human Rights - The right to a nationality</option>
+                </optgroup>
+                <option>Constitutional - other</option>
+            </optgroup>
+        </select>
+        </td>
+    </tr>
+
+    </tbody>
+</table>
+<button id="add">Add Judge</button><button id="remove">Remove Last Judge</button>
+
+</body>
+</html>

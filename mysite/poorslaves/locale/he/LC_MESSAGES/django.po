@@ -1,0 +1,274 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-04 23:29+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\poorslaves\apps.py:7
+msgid "raamses"
+msgstr "רעמסס"
+
+#: .\poorslaves\models.py:15 .\poorslaves\models.py:37
+msgid "document"
+msgstr "מסמך"
+
+#: .\poorslaves\models.py:16
+msgid "documents"
+msgstr "מסמכים"
+
+#: .\poorslaves\models.py:19
+msgid "url"
+msgstr "כתובת אינטרנט"
+
+#: .\poorslaves\models.py:20
+msgid "views"
+msgstr "צפיות"
+
+#: .\poorslaves\models.py:21
+msgid "responded"
+msgstr "תשובות"
+
+#: .\poorslaves\models.py:22
+msgid "metadata"
+msgstr ""
+
+#: .\poorslaves\models.py:28
+#, python-format
+msgctxt "document model name"
+msgid "xxy %(id)s"
+msgstr "מסמך %(id)s"
+
+#: .\poorslaves\models.py:33
+msgid "answer"
+msgstr "תשובה"
+
+#: .\poorslaves\models.py:34
+msgid "answers"
+msgstr "תשובות"
+
+#: .\poorslaves\templates\poorslaves\base.html:20
+msgid "Hello"
+msgstr "שלום"
+
+#: .\poorslaves\templates\poorslaves\base.html:20
+msgid "Logout"
+msgstr "יציאה"
+
+#: .\poorslaves\templates\poorslaves\console.html:10
+msgid "total_documents2"
+msgstr "סך הכל מסמכים לקידוד"
+
+#: .\poorslaves\templates\poorslaves\console.html:11
+msgid "total_documents_solved"
+msgstr "סך הכל מסמכים שקודדו"
+
+#: .\poorslaves\templates\poorslaves\console.html:12
+msgid "total_documents_to_solve"
+msgstr "סך הכל מסמכים שנותרו לקודד"
+
+#: .\poorslaves\templates\poorslaves\console.html:13
+msgid "last_7_days"
+msgstr "מסמכים שקודדו ב-7 הימים האחרונים"
+
+#: .\poorslaves\templates\poorslaves\console.html:14
+msgid "total_today"
+msgstr "היום"
+
+#: .\poorslaves\templates\poorslaves\console.html:15
+msgid "total_yesterday"
+msgstr "אתמול"
+
+#: .\poorslaves\templates\poorslaves\console.html:16
+msgid "total_day_before"
+msgstr "שלשום"
+
+#: .\poorslaves\templates\poorslaves\console.html:17
+msgid "remaining_weeks"
+msgstr "שבועות שנותרו"
+
+#: .\poorslaves\templates\poorslaves\console.html:18
+msgid "repeated_answers"
+msgstr "הגשות כפולות"
+
+#: .\poorslaves\templates\poorslaves\console.html:20
+msgid "see_answers"
+msgstr "צפיה בטפסים שנשלחו"
+
+#: .\poorslaves\templates\poorslaves\random.html:11
+msgid "fromweekstartnothing2"
+msgstr "טרם שלחת טפסים השבוע"
+
+#: .\poorslaves\templates\poorslaves\random.html:13
+msgid "fromweekstart"
+msgstr "טפסים שנשלחו מתחילת השבוע"
+
+#: .\poorslaves\templates\poorslaves\random.html:36
+msgid "nothingheretitle"
+msgstr "אין פה כלום כעת"
+
+#: .\poorslaves\templates\poorslaves\random.html:37
+msgid "nothingheretext"
+msgstr "בא לך לחזור מאוחר יותר?"
+
+#: .\poorslaves\templates\poorslaves\show_answers.html:16
+msgid "total_sent"
+msgstr "סך הכל טפסים שנשלחו"
+
+#: .\poorslaves\templates\poorslaves\show_answers.html:19
+msgid "answer_search"
+msgstr "לפי תשובה"
+
+#: .\poorslaves\templates\poorslaves\show_answers.html:21
+msgid "document_search"
+msgstr "לפי מסמך"
+
+#: .\poorslaves\templates\poorslaves\show_answers.html:24
+msgid "search_submit"
+msgstr "חפש"
+
+#: .\poorslaves\templates\poorslaves\show_answers.html:30
+msgid "showing_answers_from2"
+msgstr "מציג כעת טופס"
+
+#: .\poorslaves\templates\poorslaves\show_answers.html:30
+msgid "showing_answers_to"
+msgstr "עד"
+
+#: .\poorslaves\templates\poorslaves\show_answers.html:32
+msgid "next_page"
+msgstr "הדף הבא"
+
+#: .\poorslaves\templates\poorslaves\show_answers.html:34
+#: .\poorslaves\templates\poorslaves\show_answers.html:37
+#: .\poorslaves\templates\poorslaves\show_answers.html:69
+msgid "previous_page"
+msgstr "הדף הקודם"
+
+#: .\poorslaves\templates\poorslaves\show_answers.html:40
+msgid "exportExcel"
+msgstr "יצוא לאקסל"
+
+#: .\poorslaves\templates\poorslaves\show_answers.html:56
+msgid "openlink"
+msgstr "פתח"
+
+#: .\poorslaves\templates\poorslaves\show_answers.html:72
+msgid "no_results"
+msgstr "אין כאן תוצאות"
+
+#: .\poorslaves\templates\poorslaves\swallow.html:11
+msgid "Swallow"
+msgstr "לבלוע"
+
+#: .\poorslaves\templates\registration\login.html:21
+msgid "Login"
+msgstr "כניסה למערכת"
+
+#: .\poorslaves\templates\registration\login.html:26
+msgid "Submit"
+msgstr "שלח"
+
+#: .\poorslaves\views.py:149
+#, fuzzy
+#| msgid "projects"
+msgid "Document"
+msgstr "מזהה מסמך"
+
+#~ msgid "missing_documents2"
+#~ msgstr "מסמכים שטרם קודדו"
+
+#~ msgid "finish_in"
+#~ msgstr "סיום משוער"
+
+#~ msgid ""
+#~ " \"fromweekstart\"%%}\n"
+#~ "    You sent %(completed)s form this week\n"
+#~ "    "
+#~ msgid_plural ""
+#~ "\n"
+#~ "    Sent %(completed)s forms this week\n"
+#~ "    "
+#~ msgstr[0] "שלי"
+#~ msgstr[1] ""
+
+#~ msgid "question"
+#~ msgstr "שאלה"
+
+#~ msgid "questions"
+#~ msgstr "שאלות"
+
+#, fuzzy
+#~| msgid "questions"
+#~ msgid "question: %(shortname)s"
+#~ msgstr "שאלה: %(shortname)s"
+
+#, fuzzy
+#~| msgid "name"
+#~ msgid "shortname"
+#~ msgstr "מזהה"
+
+#, fuzzy
+#~| msgid "questions"
+#~ msgctxt "help text"
+#~ msgid "question shortname"
+#~ msgstr "מזהה קצר לשאלה (יופיע בראש עמודה בטבלאות)"
+
+#, fuzzy
+#~| msgid "questions"
+#~ msgid "question_text"
+#~ msgstr "גוף השאלה"
+
+#, fuzzy
+#~| msgid "question"
+#~ msgid "description"
+#~ msgstr "תיאור מפורט"
+
+#~ msgid "order"
+#~ msgstr "סודר"
+
+#~ msgid "name"
+#~ msgstr "שם"
+
+#~ msgid "This is the long explanation"
+#~ msgstr "תיאור ארוך יותר אודות הפרוייקט"
+
+#~ msgid "active"
+#~ msgstr "פעיל"
+
+#~ msgid "project"
+#~ msgstr "פרויקט"
+
+#~ msgid "projects"
+#~ msgstr "פרויקטים"
+
+#~ msgctxt "help text"
+#~ msgid "project of question"
+#~ msgstr "לאיזה פרוייקט שייכת השאלה הזאת"
+
+#~ msgid "List of Projects"
+#~ msgstr "רשימת פרוייקטים"
+
+#, fuzzy
+#~| msgid "You have no projects"
+#~ msgid "Create a new project"
+#~ msgstr "צור פרוייקט חדש"
+
+#~ msgid "You have no projects"
+#~ msgstr "אין לך פרוייקטים"
+
+#~ msgctxt "model name"
+#~ msgid "xxy"
+#~ msgstr "מסמך"

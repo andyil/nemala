@@ -1,0 +1,39 @@
+{% extends "poorslaves/base.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block content %}
+
+{% load static %}
+
+<span class="score">
+    {% if 0 == completed %}
+        {% trans "fromweekstartnothing2"%}
+    {% else %}
+        {% trans "fromweekstart"%}: {{completed}}
+    {% endif %}
+    </span><br/>
+
+{% if document %}
+    <span class="hint">{{hint}}</span>
+
+    <div id="document">
+                <object width="650" height="600" data="{{document.url}}"></object>
+            </div>
+            <div  id="form">
+                <form method="post" action="accept">
+
+
+                    {% include "poorslaves/theform.html" %}
+
+                    {% csrf_token %}
+                    <input type="hidden" name="document" value="{{document.id}}">
+                    <hr/>
+                    <input id="submit" type="submit">
+                </form>
+            </div>
+{% else %}
+    <h1>{% trans "nothingheretitle"%}</h1>
+    <h3>{% trans "nothingheretext"%}</h3>
+{% endif %}
+    {% endblock %}

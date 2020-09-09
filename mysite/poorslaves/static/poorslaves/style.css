@@ -1,0 +1,13 @@
+tr {
+    border: 1px;
+    border-style: solid;
+}
+
+#templaterow {
+    display: none
+}
+
+.judgebased {
+    display: none
+}
+

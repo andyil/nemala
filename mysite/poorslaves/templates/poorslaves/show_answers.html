@@ -1,0 +1,90 @@
+{% extends "poorslaves/base.html" %}
+{% load static %}
+{% load i18n %}
+<html>
+<head>
+    {% block head %}
+
+<link rel="stylesheet" href='{% static "poorslaves/style-he.css" %}'/>
+<script src='{% static "poorslaves/enable-disable.js" %}'></script>
+    {% endblock %}
+
+</head>
+
+
+{% block content %}
+<h3>{% trans "total_sent"%}: {{total}}</h3>
+
+<form method="get" action="show_answers">
+<label for="answer_search">{% trans "answer_search" %}:</label>
+<input type="text" id="answer_search" name="answer_search"><br/>
+<label for="document_search">{% trans "document_search" %}:</label>
+<input type="document_search" id="document_search" name="document_search">
+<br/>
+    <input type="submit" value='{% trans "search_submit" %}'>
+</form>
+
+
+{% if answers_list %}
+
+    <h4>{% trans "showing_answers_from2" %} {{first}} {% trans "showing_answers_to" %} {{last}}
+
+        <a href="?page_number={{next_page}}">{% trans "next_page" %}</a>
+        {% if previous_page > 1 %}
+            <a href="?page_number={{previous_page}}">{% trans "previous_page" %}</a>
+        {% endif %}
+        {% if previous_page == 1 %}
+            <a href="show_answers">{% trans "previous_page" %}</a>
+        {% endif %}
+        </h4>
+    <a href="show_answers_excel">{% trans "exportExcel" %}</a>
+
+            <table border="1">
+                <tr>
+                    <th>accepted</th>
+                    {% for column_name in column_names %}
+                        <th>{{column_name}}</th>
+                    {% endfor %}
+                </tr>
+
+                {% for row in answers_list %}
+                <tr>
+                        <td><input class="accept" {% if row.0.accepted %}checked {%endif%} type="checkbox" data-id="{{row.0.id}}"/> </td>
+                    {% for r in row.1  %}
+                        <td>
+                            {% ifequal r|slice:":4" "http" %}
+                            <a href="{{r}}" target="_blank">{% trans "openlink" %}</a>
+                            {% else %}
+                            {{r}}
+                            {% endifequal %}
+                        </td>
+                    {% endfor %}
+                </tr>
+                {% endfor %}
+            </table>
+    <br/>
+{% else %}
+
+ {% if previous_page > 1 %}
+            <a href="?page_number={{previous_page}}">{% trans "previous_page" %}</a>
+        {% endif %}
+
+{% trans "no_results" %}
+
+{% endif %}
+
+<form style="display: none" method="post">{% csrf_token %}</form>
+<script>
+function csrfSafeMethod(method) {
+    // these HTTP methods do not require CSRF protection
+    return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+}
+$.ajaxSetup({
+    beforeSend: function(xhr, settings) {
+        if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+            xhr.setRequestHeader("X-CSRFToken", jQuery("[name=csrfmiddlewaretoken]").val());
+        }
+    }
+});
+</script>
+{% endblock %}
